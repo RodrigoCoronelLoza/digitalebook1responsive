@@ -657,11 +657,14 @@ const handleDomCLick = (event) => {
   const clickedBtn = event.target;
   const classIdentifier = clickedBtn.className.slice(0, 4);
   let modal = {};
+  console.log(classIdentifier);
   if (classIdentifier === "open") {
     modal = document.querySelector(clickedBtn.dataset.modalTarget);
+    console.log(modal);
     openModal(modal);
   } else if (classIdentifier === "clos") {
-    modal = clickedBtn.closest(".modal");
+    modal = clickedBtn.closest(`[id^="modal"]`);
+    console.log(modal);
     closeModal(modal);
   } else if (classIdentifier === "para") {
     let targetIdButton = "buttonParag" + currentParagNumber;
@@ -672,7 +675,7 @@ const handleDomCLick = (event) => {
 
 const handleOverlayClick = (event) => {
   const clickedBtn = event.target;
-  const modals = document.querySelectorAll(".modal.active");
+  const modals = document.querySelectorAll(".mymodal.active");
   modals.forEach((modal) => {
     closeModal(modal);
   });
@@ -733,11 +736,10 @@ function setVisible(value) {
     if (show3.clientHeight === 0) {
       alt3 = "9em";
     }
-  
+
     show3.style.height = alt3;
     show1.style.height = 0;
     show2.style.height = 0;
-    
   }
 }
 //Guardar en la memoria cache
@@ -799,7 +801,7 @@ function createStructure(
 function ALayoutGenerator(titles, text, page) {
   return `
   <div class="Alayout-container">
-    <img id="caratula" src="images/caratula.png">
+    <img id="caratula" src="../images/caratula.png">
       <div class="button-caratula-container">
         <button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button>
       </div>
@@ -920,7 +922,7 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
     <p class="text">${text[page]}</p>
   </div>
   <div id="Dimage-container">
-  <img id="Dimage" src="images/${images[page]}">
+  <img id="Dimage" src="../images/${images[page]}">
   </div>
   </div>`;
 }
@@ -930,7 +932,7 @@ function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
   return `
   <div id="Elayout-container">
     <div id="Eimage-container">
-      <img id="Eimage" src="images/${images[page]}">
+      <img id="Eimage" src="../images/${images[page]}">
     </div>
     <div id="index-button-container">
       <div id="index-buttons">
@@ -949,12 +951,12 @@ function FLayOutGenerator(title, text, images, page, links) {
   return `
   <div id="Flayout-container">
     <div id="Fcolumn1">
-      <img id="act-inicio-img" src="images/${images[page][0]}">
+      <img id="act-inicio-img" src="../images/${images[page][0]}">
       <h1 class="titles">${title[page]}</h1>
       <p class="text"> ${text[page]}</p>
     </div>
     <div id="Fcolumn2">
-      <img id="Flayout-img" src="images/${images[page][1]}">
+      <img id="Flayout-img" src="../images/${images[page][1]}">
       <div id="Flink-container">
         <a id="Flink" href="${links[page]}" target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>
       </div>
@@ -1011,7 +1013,7 @@ function ILayOutGenerator(title, text, images, page, links) {
   <div id="Ilayout-container">
     <div id="Icolumn1">
       <div id="Icolumn1-image-container">
-        <img id="Iimage-column1" src="images/para_profundizar.png" />
+        <img id="Iimage-column1" src="../images/para_profundizar.png" />
       </div>
       <h1 class="titles" id="Ititle">${title[page]}</h1>
       <div id="Itext-container">
@@ -1020,7 +1022,7 @@ function ILayOutGenerator(title, text, images, page, links) {
     </div>
     <div id="Icolumn2">
       <div id="Icolumn2-image-container">
-        <img id ="Iimage-column2" src="images/${images[page][0]}" />
+        <img id ="Iimage-column2" src="../images/${images[page][0]}" />
       </div>
       <div id="Ilink-container">
         <a id="Ilink" href="${links[page]}" target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>
@@ -1028,7 +1030,7 @@ function ILayOutGenerator(title, text, images, page, links) {
     </div>
     <div id="Icolumn3">
       <div id="Icolumn3-image-container">
-        <img id ="Iimage-column3" src="images/${images[page][1]}" />
+        <img id ="Iimage-column3" src="../images/${images[page][1]}" />
       </div>
     </div>
   </div>`;
@@ -1045,7 +1047,7 @@ function JLayOutGenerator(title, text, images, page) {
     </div>
     <div id="Jcarousel-container">
         <div id="Jcarousel">
-          <img id="Jimage" src="images/${images[page][currentSlideNumberCarousel]}">
+          <img id="Jimage" src="../images/${images[page][currentSlideNumberCarousel]}">
         </div>
         <div id="JnextSlide-container">
           <button class="SlideCarouselButton" onclick ="nextSlide(${numberOfSlidesCarousel})" >❯</button>
@@ -1087,7 +1089,7 @@ function KLayOutGenerator(title, text, images, page) {
       <p class="text" id="Ktext1">${text[page][0]}</p>
     </div>
     <div id="Kimage-container">
-      <img id="Kbanner" src="images/${images[page]}">
+      <img id="Kbanner" src="../images/${images[page]}">
     </div>
     <div id="Ktext-container2">
       <p class="text" id="Ktext2">${text[page][1]}</p>
@@ -1172,7 +1174,7 @@ function OLayOutGenerator(titles, images, page) {
   <div id="Olayout-container">
     <h1 class="titles" id="Otitle">${titles[page]}</h1>
     <div id="Oimage-container">
-      <img id="Oimage" src="images/${images[page]}">
+      <img id="Oimage" src="../images/${images[page]}">
     </div>
   </div>`;
 }
@@ -1187,7 +1189,7 @@ function PLayOutGenerator(titles, text, page, images, popUp) {
     </div>
   </div> 
   <div id="Pimage-container">
-  <img id="Pimage" src="images/${images[page]}">
+  <img id="Pimage" src="../images/${images[page]}">
   </div>
   </div>`;
 }
@@ -1221,12 +1223,12 @@ function modalGenerator(popUp, page, selector) {
         i
       )}
         </button>
-        <div class="modal" id="modal${i}">
-          <div class="modal-header">
+        <div class="mymodal" id="modal${i}">
+          <div class="mymodal-header">
             <div class="title">${modalExtractor(popUp, page, "title", i)}</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
-          <div class="modal-body">
+          <div class="mymodal-body">
             ${modalExtractor(popUp, page, "contentModal", i)}
           </div>
         </div>
@@ -1243,7 +1245,7 @@ function modalExtractor(popUps, page, partofModal, numberModal) {
     if (popUps[page][numberModal].typeofContent === "text") {
       return popUps[page][numberModal].contentModal;
     } else {
-      return `<img id="image-modal-body" src="images/${popUps[page][numberModal].contentModal}">`;
+      return `<img id="image-modal-body" src="../images/${popUps[page][numberModal].contentModal}">`;
     }
   } else if (partofModal === "buttonName") {
     return popUps[page][numberModal].buttonName;
