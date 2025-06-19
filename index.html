@@ -20,26 +20,26 @@
   </head>
   <body>
     <div id="book-container">
-      <div id="book-title-container" class="visible-sm visible-md visible-lg">
+      <div id="book-title-container" class="visible-lg">
         <div id="book-title">
           Prácticas restaurativas para la resolución de conflictos y una vida
           libre de violencia
         </div>
       </div>
       <div id="menu-header">
-        <div id="button-container" class="visible-xs">
+        <div id="button-container" class="visible-md">
           <!-- <button class="jump-buttons" id="index-button" onclick="setPage(2)">BOTON INDEX</button> -->
         </div>
-        <div id="book-title-container" class="visible-xs">
+        <div id="book-title-container" class="visible-md">
           <div id="book-title">Prácticas restaurativas LIBRO 1</div>
         </div>
-        <div id="menu-buttons" class="visible-sm visible-md visible-lg">
+        <div id="menu-buttons" class="visible-lg">
           <button class="jump-buttons" id="home-button" onclick="setPage(2)">
             H
           </button>
           <button class="jump-buttons" onclick="setPage(0)">Inicio</button>
         </div>
-        <div id="menu-image-container">
+        <div id="menu-image-container" class="pull-right">
           <img id="logo" src="images/unefco_log.png" />
         </div>
       </div>
@@ -54,6 +54,7 @@
                 data-toggle="collapse"
                 data-target="#collapsable-nav"
                 aria-expanded="false"
+                onclick="handleToggleAction()"
               >
                 <!-- <span class="sr-only">Toggle navigation</span> -->
                 <span class="icon-bar"></span>

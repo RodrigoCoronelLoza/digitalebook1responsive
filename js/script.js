@@ -676,9 +676,21 @@ const handleDomCLick = (event) => {
 const handleOverlayClick = (event) => {
   const clickedBtn = event.target;
   const modals = document.querySelectorAll(".mymodal.active");
-  modals.forEach((modal) => {
-    closeModal(modal);
-  });
+  // console.log(modals.length);
+  if (modals.length > 0) {
+    modals.forEach((modal) => {
+      closeModal(modal);
+    });
+  } else {
+    const buttonAction = document.getElementById("navbarToggle");
+    const menu = document.getElementById("collapsable-nav");
+    console.log(menu);
+    overlay.classList.remove("active");
+    buttonAction.classList.add("collapsed");
+    menu.classList.remove("in");
+    buttonAction.setAttribute("aria-expanded", "false");
+    // return;
+  }
 };
 
 //Siguiente pagina
@@ -708,6 +720,21 @@ function setPage(value) {
   setParagh(1);
   cachePage();
   masterRender();
+}
+
+//ToggleButton
+function handleToggleAction() {
+  // console.log("estoy en el toogle");
+  const buttonAction = document.getElementById("navbarToggle");
+  console.log(buttonAction.getAttribute("aria-expanded"));
+  if (buttonAction.getAttribute("aria-expanded") === "true") {
+    overlay.classList.remove("active");
+    console.log(overlay);
+    console.log("estamostrue");
+  } else {
+    overlay.classList.add("active");
+  }
+  // indexContainer.style.height = 0;
 }
 
 function setVisible(value) {

@@ -41,7 +41,7 @@ body {
   height: 90%;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 992px) {
   #book-title-container {
     height: 2%;
   }
@@ -64,7 +64,8 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  
   #button-container {
     width: 15%;
   }
@@ -85,13 +86,10 @@ body {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 0.5em; */
-    /* padding-bottom: 0.3em; */
-    /* position: relative; */
-    /* bottom: 1em; */
+    
     font-size: 0.9em;
   }
-}
+} */
 #page-container {
   width: 100%;
   height: 88%;
@@ -186,14 +184,16 @@ body {
   height: 10%;
 }
 #menu-buttons {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   text-align: left;
   width: 70%;
 }
 #menu-image-container {
   border: 1px solid green;
-  text-align: right;
+  /* text-align: right; */
   width: 30%;
+  /* margin-right: 0; */
+  /* padding-right: 0; */
   /* margin: auto; */
 }
 
@@ -1603,34 +1603,42 @@ hr {
 
 #index-permanent {
   background-color: white;
+  /* font-size: 1rem; */
   font-size: 1.2vmax;
-  height: 100%;
+  min-height: 0;
+  /* height:50%; */
   width: 15%;
-  border: 1px solid blue;
-}
+  /* border: 1px solid blue; */
+  border: none;
+  border-radius: 0.3em;
 
+  /* border-radius: 1em; */
+}
+/* 
 @media (max-width: 767px) {
+  
   #page-container {
-    /* position: relative; */
+    
   }
   #index-permanent {
     border: 1px solid green;
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 2rem; */
     width: 15%;
-    /* background-color: aquamarine; */
-    /* z-index: 1000; */
   }
-}
+} */
+
+/* @media(max-width:1199px){
+#menu-header {
+    display: inline;
+  }
+} */
 
 #index-permanent button.navbar-toggle,
 #index-permanent .icon-bar {
   width: 100%;
   /* height: 100%; */
-  border: 1px solid black;
+  border: 1px solid var(--secondary);
   /* z-index: 10000; */
-  padding: 0;
+  /* padding: 0; */
   /* margin: 0; */
 }
 /* #index-permanent button.navbar-toggle {
@@ -1651,52 +1659,67 @@ hr {
 } */
 
 #index-permanent .container #button-index-container #navbarToggle {
-  border: 1px solid firebrick;
-  height: 4rem;
-  width: 4rem;
+  border: 1px solid var(--secondary);
+  height: 3rem;
+  width: 6rem;
   /* padding: 0; */
   margin-top: 0;
   margin-bottom: 0;
   /* margin-left: 0; */
   /* padding-left: 0; */
   position: absolute;
-  top: -180%;
+  top: -3.7rem;
   left: 0;
+  background-color: white;
   /* padding:0 ; */
   /* padding-left: auto; */
   /* margin: 0; */
+  /* padding-bottom: 0; */
 }
 #index-permanent .container {
-  border: 2px solid green;
-  height: 100%;
+  /* border: 2px solid orange; */
+  /* height: 100%; */
   width: 100%;
   /* padding-left: 0; */
   /* padding-top: 0; */
   padding: 0;
   margin: 0;
+  /* border-radius: 0.2em; */
+
   /* padding-right: 0; */
   /* margin-top: 0; */
 }
 #index-permanent .container #button-index-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
-  height: 3rem;
+  height: 0;
   position: relative;
   margin: 0;
   padding: 0;
   /* align-items: left; */
 }
 .index-desp {
+  /* height: 100%; */
   margin: 0;
   padding: 0;
+  /* border-radius: 20px; */
+  /* background-color: greenyellow; */
+
   /* padding-left: 0; */
   /* padding-right: 0; */
 }
 .list-item {
+  /* border: 1px solid green; */
   list-style-type: none;
   overflow: hidden;
   width: 100%;
-  /* padding: 0;; */
+  /* height: 16%; */
+
+  /* border-radius: 20px; */
+
+  /* height: 1em; */
+  /* margin: 0; */
+  /* padding: 0; */
 }
 #show1 {
   list-style-type: none;
@@ -1717,30 +1740,149 @@ hr {
   height: 0;
 }
 #collapsable-nav {
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
   width: 100%;
   padding: 0;
   margin: 0;
+  /* height: 100%; */
+
+  /* border-radius: 20px; */
 }
 .list-button {
+  padding: 0;
+  /* border: 1px solid green; */
+  /* margin: 0; */
   height: 1.5em;
+  /* height: 100%; */
   width: 100%;
+  /* border-radius: 20px; */
 }
 
 .index-buttons {
   background-color: white;
+  /* background-color: red; */
   font-size: 1vw;
+  /* font-size: 1em; */
   margin: 0;
+  padding: auto;
   border: none;
+  height: 80%;
   height: 100%;
   width: 100%;
   text-align: left;
   cursor: pointer;
+  border-radius: 0.3em;
   /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
 }
 .index-buttons:hover {
   background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   color: white;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #book-title-container {
+    height: 2%;
+  }
+  #book-title {
+    color: green;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    width: 50%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    position: relative;
+    bottom: 1em;
+    font-size: 1.2vw;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* #menu-header {
+    display: inline;
+  } */
+  #button-container {
+    width: 15%;
+  }
+  #book-title-container {
+    width: 55%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  #book-title {
+    color: red;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    width: 50%;
+    height: 75%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 0.5em; */
+    /* padding-bottom: 0.3em; */
+    /* position: relative; */
+    /* bottom: 1em; */
+    font-size: 0.9em;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #menu-header {
+    display: inline;
+  }
+  #menu-image-container {
+    width: 50%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  #menu-header {
+    display: inline;
+  }
+  #menu-image-container {
+    width: 50%;
+  }
+  #page-container {
+    position: relative;
+  }
+  #index-permanent {
+    /* height: 0; */
+    /* border: 1px solid green; */
+    /* border-radius: 1em; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* background-color: transparent; */
+    z-index: 100;
+    font-size: 2em;
+  }
+
+  .index-buttons {
+    font-size: 0.55em;
+    padding: 0;
+    /* padding: ; */
+    /* border: solid forestgreen */
+  }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  #menu-header {
+    display: inline;
+  }
 }
 
 /* Pop-ups */
