@@ -131,9 +131,9 @@ body {
   color: white;
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
 
-  font-size: 1.2vw;
+  font-size: 1em;
   border-radius: 100px;
-  width: 6em;
+  width: 8em;
   height: 80%;
   border: none;
   box-shadow: 5px 7px 10px var(--primary);
@@ -159,10 +159,10 @@ body {
 .jump-buttons {
   color: white;
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
-  font-size: 1.2vw;
+  font-size: 1em;
   border-radius: 100px;
   border: none;
-  width: 7.5em;
+  width: 8em;
   height: 70%;
   box-shadow: 5px 7px 10px var(--backgroud);
 }
@@ -290,22 +290,6 @@ hr {
   margin: 1em 0;
   padding: 0;
   width: 90%;
-}
-
-.Clayout #Cindex-buttons {
-  height: 90%;
-  display: flex;
-}
-
-.Clayout #Cindex-buttons #column1 {
-  width: 33%;
-}
-
-.Clayout #Cindex-buttons #column2 {
-  width: 33%;
-}
-.Clayout #Cindex-buttons #column3 {
-  width: 34%;
 }
 
 .Clayout .button-index-container {
@@ -438,26 +422,26 @@ hr {
   background-size: 100% 100%;
 }
 
-.Elayout #Elayout-container {
+/* .Elayout #Elayout-container {
   display: flex;
   height: 100%;
-}
+} */
 
-.Elayout #Eimage-container {
+/* .Elayout #Eimage-container {
   width: 60%;
   height: auto;
-}
-.Elayout #Eimage-container #Eimage {
+} */
+/* .Elayout #Eimage-container #Eimage {
   width: 100%;
   height: 100%;
-}
-.Elayout #Elayout-container #index-button-container {
+} */
+/* .Elayout #Elayout-container #index-button-container {
   width: 40%;
   height: 100%;
   position: relative;
-}
+} */
 
-.Elayout #Elayout-container #index-button-container #index-buttons {
+/* .Elayout #Elayout-container #index-button-container #index-buttons {
   width: 100%;
   margin: 0;
   position: absolute;
@@ -466,7 +450,7 @@ hr {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 70%;
-}
+} */
 
 .Elayout
   #Elayout-container
@@ -485,7 +469,7 @@ hr {
   height: 70%;
   font-size: 0.9em;
 }
-
+/* #region */
 /* Plantilla F */
 
 .Flayout {
@@ -1817,6 +1801,50 @@ hr {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+  .Clayout #Cindex-buttons {
+    height: 90%;
+    display: flex;
+  }
+
+  .Clayout #Cindex-buttons #column1 {
+    width: 33%;
+  }
+
+  .Clayout #Cindex-buttons #column2 {
+    width: 33%;
+  }
+  .Clayout #Cindex-buttons #column3 {
+    width: 34%;
+  }
+  .Elayout #Elayout-container {
+    display: flex;
+    height: 100%;
+  }
+
+  .Elayout #Eimage-container {
+    width: 60%;
+    height: auto;
+  }
+  .Elayout #Elayout-container #index-button-container {
+    width: 40%;
+    height: 100%;
+    position: relative;
+  }
+  .Elayout #Eimage-container #Eimage {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+  }
+  .Elayout #Elayout-container #index-button-container #index-buttons {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 70%;
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1873,7 +1901,90 @@ hr {
     height: auto;
   }
   .Blayout #Blayout-container #Btext-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
     height: auto;
+  }
+  .Clayout {
+    height: auto;
+    font-size: 1em;
+  }
+  .Clayout #Clayout-container {
+    height: auto;
+  }
+  .Clayout #Clayout-container #Ctitle {
+    color: green;
+    /* margin: 0; */
+    padding-top: 1em;
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Clayout #Clayout-container #Cindex-buttons {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .Clayout .button-index-container {
+    font-size: 1em;
+  }
+  .Clayout .button-index-container .index-big-buttons {
+    font-size: 1em;
+  }
+  .Elayout {
+    height: auto;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .Elayout #Elayout-container {
+    height: auto;
+  }
+
+  .Elayout #Eimage-container {
+    /* width: 60%; */
+    height: 30em;
+    padding: 0;
+  }
+  .Elayout #Eimage-container #Eimage {
+    width: 100%;
+    height: 100%;
+  }
+  .Elayout #Elayout-container #index-button-container {
+    border: 3px solid orange;
+    /* width: 40%; */
+    height: 30em;
+    position: relative;
+  }
+
+  .Elayout #Elayout-container #index-button-container #index-buttons {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 70%;
+  }
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .button-index-container {
+    height: 4em;
+    /* margin-top: 1em; */
+    margin-bottom: 1em;
+  }
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .jump-buttons {
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
   }
 }
 
@@ -1899,7 +2010,36 @@ hr {
     width: 30%;
   }
   .index-buttons {
-    font-size: 1.1em;
+    font-size: 0.55em;
+    padding: 0;
+    /* padding: ; */
+    /* border: solid forestgreen */
+  }
+  #adv-buttons {
+    text-align: center;
+    /* height: auto; */
+  }
+  .nav-buttons {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 10em;
+    height: 1.5em;
+    /* height:fit-content; */
+    /* color: #7000e0; */
+
+    /* height: 70%; */
+  }
+  .jump-buttons {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 2em;
+  }
+  .index-buttons {
+    font-size: 1.3em;
   }
 
   .Blayout {
@@ -1916,7 +2056,93 @@ hr {
     font-size: 1.8em;
   }
   .Blayout #Blayout-container #Btext-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
     height: auto;
+  }
+  .Clayout {
+    height: auto;
+    font-size: 1em;
+  }
+  .Clayout #Clayout-container {
+    height: auto;
+  }
+  .Clayout #Clayout-container #Ctitle {
+    color: green;
+    /* margin: 0; */
+    padding-top: 1em;
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Clayout #Clayout-container #Cindex-buttons {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .Clayout .button-index-container {
+    font-size: 1em;
+  }
+  .Clayout .button-index-container .index-big-buttons {
+    font-size: 1em;
+  }
+  .Elayout {
+    height: auto;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .Elayout #Elayout-container {
+    /* margin-top: 5em; */
+    height: auto;
+  }
+  .Elayout #Eimage-container {
+    border: 3px solid red;
+    height: 30em;
+    /* aspect-ratio: 2/1; */
+    padding: 0;
+  }
+  .Elayout #Eimage-container #Eimage {
+    width: 100%;
+    height: 100%;
+  }
+  .Elayout #Elayout-container #index-button-container {
+    border: 1px solid purple;
+    height: 30em;
+    /* width: 100%; */
+    /* margin-top: 5em; */
+    /* margin-bottom: 5em; */
+    /* height: 100%; */
+    position: relative;
+  }
+  .Elayout #Elayout-container #index-button-container #index-buttons {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 70%;
+  }
+
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .button-index-container {
+    height: 4em;
+    /* margin-top: 1em; */
+    margin-bottom: 1em;
+  }
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .jump-buttons {
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
   }
 }
 
@@ -1968,7 +2194,7 @@ hr {
     margin: 0;
     font-size: 1em;
     border-radius: 10px;
-    width: 11em;
+    width: 10em;
     height: 1.5em;
     /* height:fit-content; */
     /* color: #7000e0; */
@@ -1998,7 +2224,77 @@ hr {
     font-size: 1.8em;
   }
   .Blayout #Blayout-container #Btext-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
     height: auto;
+  }
+  .Clayout {
+    height: auto;
+    font-size: 1em;
+  }
+  .Clayout #Clayout-container {
+    height: auto;
+  }
+  .Clayout #Clayout-container #Ctitle {
+    color: green;
+    /* margin: 0; */
+    padding-top: 1em;
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Clayout #Clayout-container #Cindex-buttons {
+    margin-bottom: 2em;
+  }
+  .Clayout .button-index-container {
+    font-size: 1em;
+  }
+  .Clayout .button-index-container .index-big-buttons {
+    font-size: 1em;
+  }
+  .Elayout {
+    height: auto;
+    width: 100%;
+    padding-top: 1em;
+  }
+  .Elayout #Elayout-container {
+    margin-top: 5em;
+    height: auto;
+  }
+  .Elayout #Eimage-container {
+    border: 1px solid red;
+    /* height: 10em; */
+    aspect-ratio: 2/1;
+  }
+  .Elayout #Eimage-container #Eimage {
+    width: 100%;
+    height: 100%;
+  }
+  .Elayout #Elayout-container #index-button-container {
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    /* height: 100%; */
+    /* position: relative; */
+  }
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .button-index-container {
+    height: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .Elayout
+    #Elayout-container
+    #index-button-container
+    #index-buttons
+    .jump-buttons {
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
   }
 }
 

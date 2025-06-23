@@ -851,88 +851,90 @@ function CLayOutGenerator(titles, text, page) {
   return ` 
   <div id="Clayout-container">
     <h1 class="titles" id="Ctitle">${titles[page]}</h1>
-    <div id="Cindex-buttons">
-      <div id="column1">
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(3)">&#9674 Presentaci&oacuten</button> 
+
+      <div id="Cindex-buttons" class="row">
+        <div id="column1" class="col-xs-12 col-sm-6">
+          <hr class="visible-xs"/>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(3)">&#9674 Presentaci&oacuten</button> 
+          </div>
+          <hr/>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(5)"> <b>TEMA 1: BASE NORMATIVA</b></button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(6)">&#9674 Actividad de inicio </button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(7)">&#9674 Normativa Internacional</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(8)">&#9674 Normativa Nacional</button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(9)">&#9674 Normativa emitida por el Ministerio de Educación</button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(11)">&#9674 Actividad Sugerida</button>
+          </div>
         </div>
-        <hr/>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(5)"> <b>TEMA 1: BASE NORMATIVA</b></button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(6)">&#9674 Actividad de inicio </button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(7)">&#9674 Normativa Internacional</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(8)">&#9674 Normativa Nacional</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(9)">&#9674 Normativa emitida por el Ministerio de Educación</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(11)">&#9674 Actividad Sugerida</button>
+        <div id="column2" class="col-xs-12 col-sm-6">
+          <hr class="visible-xs"/>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(12)"><b>TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</b></button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(13)">&#9674 Actividad de inicio</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(14)">&#9674 Conflicto en el ambito educativo</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(17)">&#9674 Características del conflicto</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(22)">&#9674 Factores de riesgo y violencia</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(28)">&#9674 Herramientas restaurativas</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(32)">&#9674 Actividad sugerida</button> 
+          </div>
         </div>
         
-        
-      </div>
-      <div id="column2">
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(12)"><b>TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</b></button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(13)">&#9674 Actividad de inicio</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(14)">&#9674 Conflicto en el ambito educativo</button>
-        </div>
-         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(17)">&#9674 Características del conflicto</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(22)">&#9674 Factores de riesgo y violencia</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(28)">&#9674 Herramientas restaurativas</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(32)">&#9674 Actividad sugerida</button> 
-        </div>
-        
-      </div>
-       <div id="column3">
-       <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(33)"><b>TEMA 3: ENFOQUE RESTAURATIVO</b></button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(34)">&#9674 Actividad de inicio </button>
-        </div>
-       <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(35)">&#9674 Enfoque restaurativo</button>
-        </div>
-         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(37)">&#9674 Enfoques punitivo y restaurativo</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(41)">&#9674 Principios restaurativos</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(44)">&#9674 Disciplina social</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(47)">&#9674 Actividad sugerida</button> 
-        </div>
-        <hr/>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(48)">&#9674 Glosario</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(49)">&#9674 Bibliografía</button>
+        <div id="column3" class="col-xs-12 col-sm-6">
+          <hr class="visible-xs visible-sm visible-md"/>  
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(33)"><b>TEMA 3: ENFOQUE RESTAURATIVO</b></button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(34)">&#9674 Actividad de inicio </button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(35)">&#9674 Enfoque restaurativo</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(37)">&#9674 Enfoques punitivo y restaurativo</button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(41)">&#9674 Principios restaurativos</button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(44)">&#9674 Disciplina social</button> 
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(47)">&#9674 Actividad sugerida</button> 
+          </div>
+          <hr class="visible-xs"/>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(48)">&#9674 Glosario</button>
+          </div>
+          <div class="button-index-container">
+            <button class="index-big-buttons" onclick="setPage(49)">&#9674 Bibliografía</button>
+          </div>
         </div>
       </div>
-    </div>
   </div>`;
 }
 
@@ -958,11 +960,11 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
 function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
   return `
   <div id="Elayout-container">
-    <div id="Eimage-container">
+    <div id="Eimage-container" class="col-md-6 col-sm-6 col-xs-12">
       <img id="Eimage" src="images/${images[page]}">
     </div>
-    <div id="index-button-container">
-      <div id="index-buttons">
+    <div id="index-button-container" class="col-md-6 col-sm-6 col-xs-12">
+      <div id="index-buttons" >
         <div class="button-index-container"><button class="jump-buttons" onclick="setPage(${buttonsPageNumber[page][0]})">${buttonName[page][0]}</button></div>
         <div class="button-index-container"><button class="jump-buttons" onclick="setPage(${buttonsPageNumber[page][1]})">${buttonName[page][1]}</button></div>
         <div class="button-index-container"><button class="jump-buttons" onclick="setPage(${buttonsPageNumber[page][2]})">${buttonName[page][2]}</button></div>
