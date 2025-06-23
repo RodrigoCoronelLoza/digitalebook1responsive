@@ -979,12 +979,12 @@ function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
 function FLayOutGenerator(title, text, images, page, links) {
   return `
   <div id="Flayout-container">
-    <div id="Fcolumn1">
+    <div id="Fcolumn1" class="col-xs-12 col-sm-6 col-md-8">
       <img id="act-inicio-img" src="images/${images[page][0]}">
       <h1 class="titles">${title[page]}</h1>
       <p class="text"> ${text[page]}</p>
     </div>
-    <div id="Fcolumn2">
+    <div id="Fcolumn2" class="col-xs-12 col-sm-6 col-md-4">
       <img id="Flayout-img" src="images/${images[page][1]}">
       <div id="Flink-container">
         <a id="Flink" href="${links[page]}" target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>

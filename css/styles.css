@@ -469,7 +469,7 @@ hr {
   height: 70%;
   font-size: 0.9em;
 }
-/* #region */
+
 /* Plantilla F */
 
 .Flayout {
@@ -482,12 +482,7 @@ hr {
   background-size: 100% 100%;
 }
 
-.Flayout #Flayout-container {
-  display: flex;
-  height: 100%;
-}
-
-.Flayout #Flayout-container #Fcolumn1 {
+/* .Flayout #Flayout-container #Fcolumn1 {
   width: 60%;
   padding: 20px;
 }
@@ -543,8 +538,9 @@ hr {
   text-decoration: none;
   font-size: 1.2vw;
   color: white;
-}
+} */
 
+/* #region */
 /* Plantilla G */
 
 .Glayout {
@@ -1845,6 +1841,71 @@ hr {
     transform: translate(-50%, -50%);
     height: 70%;
   }
+  .Flayout #Flayout-container {
+    display: flex;
+    height: 100%;
+  }
+  .Flayout #Flayout-container #Fcolumn1 {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
+    height: 15%;
+    width: 70%;
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 {
+    width: 40%;
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
+    width: 80%;
+    height: 75%;
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Fdownload-button {
+    margin-top: 1em;
+    width: 80%;
+    height: 15%;
+    font-size: 1.2vw;
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container {
+    margin-top: 0.9em;
+    width: 80%;
+    height: 15%;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--backgroud);
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: white;
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1985,6 +2046,72 @@ hr {
     width: 100%;
     height: 100%;
     font-size: 1.5em;
+  }
+  .Flayout {
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+  }
+  .Flayout #Flayout-container {
+    height: auto;
+  }
+  .Flayout #Flayout-container #Fcolumn1 {
+    /* width: 100%; */
+    /* padding: 20px; */
+    margin-top: 2em;
+    /* padding: 0; */
+  }
+  .Flayout #Flayout-container #Fcolumn1 .titles {
+    font-size: 1.5em;
+  }
+  .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
+    /* height: 15%; */
+    width: 70%;
+  }
+  .Flayout #Flayout-container #Fcolumn2 {
+    /* width: 40%; */
+    margin-top: 2em;
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
+    width: 100%;
+    /* height: 75%; */
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 5em;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--backgroud);
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    /* font-size: 1.2vw; */
+    color: white;
   }
 }
 
@@ -2144,6 +2271,72 @@ hr {
     height: 100%;
     font-size: 1.5em;
   }
+  .Flayout {
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+  }
+  .Flayout #Flayout-container {
+    height: auto;
+  }
+  .Flayout #Flayout-container #Fcolumn1 {
+    /* width: 100%; */
+    /* padding: 20px; */
+    margin-top: 2em;
+    /* padding: 0; */
+  }
+  .Flayout #Flayout-container #Fcolumn1 .titles {
+    font-size: 1.5em;
+  }
+  .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
+    /* height: 15%; */
+    width: 70%;
+  }
+  .Flayout #Flayout-container #Fcolumn2 {
+    /* width: 40%; */
+    margin-top: 2em;
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
+    width: 100%;
+    /* height: 75%; */
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 5em;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--backgroud);
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    /* font-size: 1.2vw; */
+    color: white;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -2294,7 +2487,81 @@ hr {
     /* margin-bottom: 1em; */
     width: 100%;
     height: 100%;
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+  .Flayout {
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+  }
+  .Flayout #Flayout-container {
+    height: auto;
+  }
+  .Flayout #Flayout-container #Fcolumn1 {
+    /* width: 100%; */
+    /* padding: 20px; */
+    margin-top: 2em;
+    /* padding: 0; */
+  }
+  .Flayout #Flayout-container #Fcolumn1 .titles {
+    font-size: 1.8em;
+  }
+  .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
+    /* height: 15%; */
+    width: 70%;
+  }
+  .Flayout #Flayout-container #Fcolumn2 {
+    /* width: 40%; */
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
+    width: 100%;
+    /* height: 75%; */
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Fdownload-button {
+    margin-top: 1em;
+    width: 80%;
+    height: 15%;
+    font-size: 1.2vw;
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 3em;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--backgroud);
+  }
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    /* font-size: 1.2vw; */
+    color: white;
   }
 }
 
