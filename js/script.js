@@ -1040,7 +1040,7 @@ function HLayOutGenerator(title, text, page, popUp) {
 function ILayOutGenerator(title, text, images, page, links) {
   return `
   <div id="Ilayout-container">
-    <div id="Icolumn1">
+    <div id="Icolumn1" class="col-xs-12 col-sm-6 col-md-6">
       <div id="Icolumn1-image-container">
         <img id="Iimage-column1" src="images/para_profundizar.png" />
       </div>
@@ -1049,7 +1049,7 @@ function ILayOutGenerator(title, text, images, page, links) {
         <p class="text" id="Itext">${text[page]}</p>
       </div>
     </div>
-    <div id="Icolumn2">
+    <div id="Icolumn2" class="col-xs-12 col-sm-6 col-md-3">
       <div id="Icolumn2-image-container">
         <img id ="Iimage-column2" src="images/${images[page][0]}" />
       </div>
@@ -1057,7 +1057,7 @@ function ILayOutGenerator(title, text, images, page, links) {
         <a id="Ilink" href="${links[page]}" target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>
       </div>
     </div>
-    <div id="Icolumn3">
+    <div id="Icolumn3" class="visible-md visible-lg col-md-3">
       <div id="Icolumn3-image-container">
         <img id ="Iimage-column3" src="images/${images[page][1]}" />
       </div>
