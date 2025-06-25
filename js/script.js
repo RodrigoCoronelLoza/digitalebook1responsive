@@ -942,15 +942,15 @@ function CLayOutGenerator(titles, text, page) {
 function DLayOutGenerator(titles, text, page, images, popUp) {
   return `<h1 class="titles">${titles[page]}</h1>
   <div id="Dlayout-container">
-  <div id="Dbutton">
+  <div id="Dbutton" class="col-xs-12 col-sm-12">
     <div id="Dmodals-container">
     ${modalGenerator(popUp, page, 0)}
     </div>
   </div> 
-  <div id="Dtext">
+  <div id="Dtext" class="col-xs-12 col-sm-6">
     <p class="text">${text[page]}</p>
   </div>
-  <div id="Dimage-container">
+  <div id="Dimage-container" class="col-xs-12 col-sm-6">
   <img id="Dimage" src="images/${images[page]}">
   </div>
   </div>`;
@@ -1181,19 +1181,19 @@ function setParagh(numberToSet) {
 
 //Plantilla N
 function NLayOutGenerator(title, text, page, popUp) {
-  return `<div id="Nlayout-container">
-  <h1 class="titles" id="Ntitle">${title[page]}</h1>
-  <div id="Ntext-container">
-    <div id="Ntext-containerLeft">
-      <p class="text" id="Ltext1">${text[page][0]}</p>
+  return `
+  <div id="Nlayout-container">
+    <h1 class="titles" id="Ntitle">${title[page]}</h1>
+    <div id="Ntext-container">
+      <div id="Ntext-containerLeft">
+        <p class="text" id="Ltext1">${text[page][0]}</p>
+      </div>
+      <div id="Ntext-containerRight">
+         <p class="text" id="Ltext2">${text[page][1]}</p>
+      </div>
     </div>
-    <div id="Ntext-containerRight">
-      <p class="text" id="Ltext2">${text[page][1]}</p>
+    <div id="Nmodals-container">${modalGenerator(popUp, page, 0)}
     </div>
-  </div>
-  <div id="Nmodals-container">
-  ${modalGenerator(popUp, page, 0)}
-  </div>
   </div>`;
 }
 

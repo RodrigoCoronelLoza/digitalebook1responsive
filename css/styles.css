@@ -338,7 +338,7 @@ hr {
   height: 90%;
 }
 .Dlayout #Dlayout-container #Dbutton {
-  width: 5%;
+  width: 8%;
   height: 100%;
 }
 
@@ -1059,7 +1059,7 @@ hr {
   height: 80%;
   position: relative;
 }
-.Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
+/* .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
   height: 100%;
   width: 70%;
   margin: 0;
@@ -1114,7 +1114,7 @@ hr {
 .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
   background-color: var(--primary);
   color: white;
-}
+} */
 
 /* Plantilla K */
 
@@ -1376,17 +1376,20 @@ hr {
 }
 
 .Nlayout #Nlayout-container {
+  border: 1px solid black;
   height: 100%;
 }
 
 .Nlayout #Nlayout-container #Ntitle {
   margin: 0;
   height: 10%;
+  border: 1px solid red;
 }
 
 .Nlayout #Nlayout-container #Ntext-container {
   height: 60%;
   display: flex;
+  border: 2px solid orange;
 }
 
 .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
@@ -1408,6 +1411,7 @@ hr {
   transform: translateY(-50%);
 }
 .Nlayout #Nlayout-container #Nmodals-container {
+  /* border: 4px solid purple; */
   height: 30%;
   display: flex;
   justify-content: center;
@@ -1415,10 +1419,11 @@ hr {
 }
 
 .Nlayout #Nlayout-container #Nmodals-container #modal-container0 {
+  border: 1px solid green;
   width: 30%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 90%;
+  height: 100%;
 }
 
 .Nlayout #Nlayout-container #Nmodals-container #modal-container1 {
@@ -1589,12 +1594,13 @@ hr {
 
 #index-permanent {
   background-color: white;
+  /* background-color: #2f67e1; */
   /* font-size: 1rem; */
   font-size: 1.2vmax;
   min-height: 0;
   /* height:50%; */
   width: 15%;
-  /* border: 1px solid blue; */
+  /* border: 3px solid blue; */
   border: none;
   border-radius: 0.3em;
 
@@ -2019,6 +2025,62 @@ hr {
     width: 100%;
     height: 100%;
   }
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel #Jimage {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
+    position: absolute;
+    margin: 0;
+    bottom: 35%;
+    left: 90%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 5%;
+    height: 5em;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
+    position: absolute;
+    margin: 0;
+    bottom: 35%;
+    left: 5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 5%;
+    height: 5em;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--secondary)
+    );
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 2.5em;
+    border: none;
+    color: white;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
+    background-color: var(--primary);
+    color: white;
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2030,7 +2092,6 @@ hr {
   }
   #book-container {
     height: auto;
-    /* min-height: 80%; */
   }
   #button-container {
     width: 15%;
@@ -2103,6 +2164,26 @@ hr {
   .Clayout .button-index-container .index-big-buttons {
     font-size: 1em;
   }
+  .Dlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Dlayout h1 {
+    margin: 0;
+    height: auto;
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  .Dlayout #Dlayout-container {
+    display: flex;
+    height: auto;
+  }
+  .Dlayout #Dlayout-container #Dbutton {
+    width: 10%;
+    height: 35em;
+  }
+
   .Elayout {
     height: auto;
     width: 100%;
@@ -2318,6 +2399,81 @@ hr {
     width: 100%;
     height: 100%;
   }
+
+  .Jlayout {
+    border: 3px solid red;
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .Jlayout #Jlayout-container #Jtitle {
+    height: auto;
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  .Jlayout #Jlayout-container #Jtext-container {
+    margin-top: 1em;
+    height: auto;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
+    margin-top: 1em;
+    height: auto;
+    width: 100%;
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel #Jimage {
+    height: auto;
+    width: 100%;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
+    /* background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--secondary)
+    ); */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 2.5em;
+    border: none;
+    color: black;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
+    background-color: var(--primary);
+    color: white;
+  }
 }
 
 /********** Small devices only **********/
@@ -2329,7 +2485,7 @@ hr {
     height: auto;
   }
   #menu-image-container {
-    width: 50%;
+    width: 30%;
   }
   #menu-header {
     height: auto;
@@ -2339,7 +2495,7 @@ hr {
     height: auto;
   }
   #index-permanent {
-    width: 30%;
+    width: 25%;
   }
   .index-buttons {
     font-size: 0.55em;
@@ -2415,6 +2571,102 @@ hr {
   }
   .Clayout .button-index-container .index-big-buttons {
     font-size: 1em;
+  }
+  .Dlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Dlayout h1 {
+    margin-top: 1em;
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Dlayout #Dlayout-container {
+    display: block;
+    height: auto;
+  }
+  .Dlayout #Dlayout-container #Dbutton {
+    width: 100%;
+    height: auto;
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container {
+    border: 1px solid red;
+    height: 3em;
+    display: flex;
+    width: 100%;
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container0 {
+    height: 100%;
+    border: 1px solid green;
+    /* width: 50%; */
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container1 {
+    height: 100%;
+    border: 1px solid green;
+    /* width: 50%; */
+    /* margin: 0; */
+  }
+
+  .Dlayout #Dbutton .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--primary)
+    );
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    font-size: 1em;
+  }
+  .Dlayout #Dbutton .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--hoverbuttons1)
+    );
+  }
+  .Dlayout #Dlayout-container #Dbutton .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--primary)
+    );
+    width: 90%;
+    height: 100%;
+    margin-top: 0;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    box-shadow: 8px 8px 5px var(--backgroud);
+    font-size: 1em;
+  }
+
+  .Dlayout #Dlayout-container #Dbutton .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--hoverbuttons1)
+    );
+  }
+  .Dlayout #Dtext {
+    /* width: 100%; */
+    padding-bottom: 2em;
+  }
+
+  .Dlayout #Dimage-container {
+    /* width: 100%; */
+    height: auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .Dlayout #Dimage-container #Dimage {
+    height: 100%;
+    width: 100%;
   }
   .Elayout {
     height: auto;
@@ -2620,6 +2872,85 @@ hr {
     font-size: 1em;
     color: white;
   }
+
+  .Jlayout {
+    border: 3px solid red;
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .Jlayout #Jlayout-container #Jtitle {
+    height: auto;
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  .Jlayout #Jlayout-container #Jtext-container {
+    margin-top: 1em;
+    height: auto;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container {
+    border: 1px solid greenyellow;
+    height: auto;
+    position: relative;
+    /* margin-bottom: 2em; */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel #Jimage {
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
+    /* border: 1px solid green; */
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+    /* z-index: 10000; */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
+    /* background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--secondary)
+    ); */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 2.5em;
+    border: none;
+    color: black;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
+    background-color: var(--primary);
+    color: white;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -2727,6 +3058,103 @@ hr {
   .Clayout .button-index-container .index-big-buttons {
     font-size: 1em;
   }
+
+  .Dlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Dlayout h1 {
+    margin-top: 1em;
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Dlayout #Dlayout-container {
+    display: block;
+    height: auto;
+  }
+  .Dlayout #Dlayout-container #Dbutton {
+    width: 100%;
+    height: auto;
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container {
+    margin-top: 1em;
+    border: 1px solid red;
+    height: 3em;
+    display: flex;
+    width: 100%;
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container0 {
+    height: 100%;
+    border: 1px solid green;
+    /* width: 50%; */
+  }
+  .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container1 {
+    height: 100%;
+    border: 1px solid green;
+    /* width: 50%; */
+    /* margin: 0; */
+  }
+
+  .Dlayout #Dbutton .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--primary)
+    );
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    font-size: 1em;
+  }
+  .Dlayout #Dbutton .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--hoverbuttons1)
+    );
+  }
+  .Dlayout #Dlayout-container #Dbutton .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--primary)
+    );
+    width: 90%;
+    height: 100%;
+    margin-top: 0;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    box-shadow: 8px 8px 5px var(--backgroud);
+    font-size: 1em;
+  }
+
+  .Dlayout #Dlayout-container #Dbutton .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--hoverbuttons1)
+    );
+  }
+  .Dlayout #Dtext {
+    width: 100%;
+  }
+
+  .Dlayout #Dimage-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+  }
+
+  .Dlayout #Dimage-container #Dimage {
+    height: 100%;
+    width: 100%;
+  }
+
   .Elayout {
     height: auto;
     width: 100%;
@@ -2922,6 +3350,85 @@ hr {
     transform: translate(-50%, -50%);
     text-decoration: none;
     font-size: 1em;
+    color: white;
+  }
+
+  .Jlayout {
+    border: 3px solid red;
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .Jlayout #Jlayout-container #Jtitle {
+    height: auto;
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  .Jlayout #Jlayout-container #Jtext-container {
+    margin-top: 1em;
+    height: auto;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container {
+    border: 1px solid greenyellow;
+    height: auto;
+    position: relative;
+    /* margin-bottom: 2em; */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel #Jimage {
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
+    /* border: 1px solid green; */
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+    /* z-index: 10000; */
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    width: 3em;
+    height: 5em;
+  }
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
+    /* background-image: linear-gradient(
+      to right,
+      var(--auxiliar),
+      var(--secondary)
+    ); */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 2.5em;
+    border: none;
+    color: black;
+  }
+
+  .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
+    background-color: var(--primary);
     color: white;
   }
 }
