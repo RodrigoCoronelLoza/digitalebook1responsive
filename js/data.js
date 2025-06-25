@@ -84,7 +84,7 @@ const titlesData = {
   4: "DATOS GENERALES DEL CUADERNO",
   5: "",
   6: "Primeras Miradas: ¿Qué entendemos por conflicto y restauración?",
-  7: ["<br>Base normativa", "Normativa internacional:"],
+  7: ["Base normativa", "Normativa internacional:"],
   8: ["Normativa nacional", "Ley 548 Codigo niño, niña, adolescente"],
   9: ["Ministerio de educación", "Esfuerzo institucional"],
   10: "Protocolo de prevención",

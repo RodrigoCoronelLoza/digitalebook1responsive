@@ -564,18 +564,21 @@ hr {
 .Glayout #Glayout-container #Grow1 #Gtitle1 {
   margin: 0;
   height: 15%;
+  margin-top: 1em;
 }
 .Glayout #Glayout-container #Grow2 {
   width: 100%;
-  height: 15%;
+  height: 55%;
+  border: 1px solid red;
 }
 .Glayout #Glayout-container #Grow2 #Gtitle2 {
   margin: 0;
+  height: 20%;
 }
 
-.Glayout #Glayout-container #Grow3 {
+.Glayout #Glayout-container #Grow2 #Grow3 {
   width: 100%;
-  height: 50%;
+  height: 80%;
   display: flex;
 }
 
@@ -2307,6 +2310,74 @@ hr {
     /* font-size: 1.2vw; */
     color: white;
   }
+  .Glayout {
+    height: auto;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  .Glayout #Glayout-container {
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 {
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 #Gtitle1 {
+    height: auto;
+    font-size: 1.8em;
+  }
+  .Glayout #Glayout-container #Grow2 {
+    width: 100%;
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow2 #Gtitle2 {
+    margin: 0;
+    height: auto;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  .Glayout #Glayout-container #Grow2 #Grow3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .Glayout #Grow3 #Gmodal-container {
+    width: 40%;
+    height: auto;
+  }
+
+  .Glayout #Grow3 #Gnext-modal {
+    width: 60%;
+  }
+
+  .Glayout #Grow3 #Gmodal-container #modal-container0 {
+    height: 100%;
+  }
+
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--auxiliar)
+    );
+    color: white;
+    width: 60%;
+    height: 80%;
+    border-radius: 50%;
+    font-size: 1.1vw;
+    box-shadow: 8px 8px 10px var(--backgroud);
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--hoverbuttons0)
+    );
+  }
+
   .Ilayout {
     height: auto;
     font-size: 1em;
@@ -2794,6 +2865,83 @@ hr {
     /* font-size: 1.2vw; */
     color: white;
   }
+  .Glayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .Glayout #Glayout-container {
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 {
+    margin-top: 1em;
+    border: 1px solid purple;
+    width: 50%;
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 #Gtitle1 {
+    /* margin-top: 1em; */
+    border: 1px solid black;
+    margin: 0;
+    height: auto;
+    font-size: 1.8em;
+    /* padding-top: 0; */
+    /* margin-bottom: 1em; */
+  }
+
+  .Glayout #Glayout-container #Grow2 {
+    width: 50%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .Glayout #Glayout-container #Grow2 #Gtitle2 {
+    border: 1px solid black;
+    margin: 0;
+    height: auto;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  .Glayout #Glayout-container #Grow2 #Grow3 {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .Glayout #Grow3 #Gmodal-container {
+    width: 100%;
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .Glayout #Grow3 #Gnext-modal {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--auxiliar)
+    );
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    font-size: 1em;
+    box-shadow: 8px 8px 10px var(--backgroud);
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--hoverbuttons0)
+    );
+  }
   .Ilayout {
     height: auto;
     font-size: 1em;
@@ -3274,6 +3422,77 @@ hr {
     /* font-size: 1.2vw; */
     color: white;
   }
+
+  .Glayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .Glayout #Glayout-container {
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 {
+    width: 100%;
+    height: auto;
+  }
+  .Glayout #Glayout-container #Grow1 #Gtitle1 {
+    /* margin-top: 1em; */
+    height: auto;
+    font-size: 1.8em;
+  }
+
+  .Glayout #Glayout-container #Grow2 {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .Glayout #Glayout-container #Grow2 #Gtitle2 {
+    margin: 0;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  .Glayout #Glayout-container #Grow2 #Grow3 {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .Glayout #Grow3 #Gmodal-container {
+    width: 100%;
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .Glayout #Grow3 #Gnext-modal {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--auxiliar)
+    );
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    font-size: 1em;
+    box-shadow: 8px 8px 10px var(--backgroud);
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--auxiliar2),
+      var(--hoverbuttons0)
+    );
+  }
+
   .Ilayout {
     height: auto;
     font-size: 1em;

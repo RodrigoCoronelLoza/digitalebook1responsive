@@ -997,16 +997,16 @@ function FLayOutGenerator(title, text, images, page, links) {
 function GLayOutGenerator(title, text, page, popUp) {
   return `
   <div id="Glayout-container">
-    <div id="Grow1">
+    <div id="Grow1" class="col-xs-12 col-sm-6">
       <h1 class="titles" id ="Gtitle1">${title[page][0]}</h1>
       <p class="text">${text[page][0]}</p>
     </div>
-    <div id="Grow2">
+    <div id="Grow2" class="col-xs-12 col-sm-6">
       <h1 class="titles" id ="Gtitle2">${title[page][1]}</h1>
-    </div>
-    <div id="Grow3"> 
-      <div id="Gmodal-container">${modalGenerator(popUp, page, 0)}</div> 
-      <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
+      <div id="Grow3" > 
+        <div id="Gmodal-container">${modalGenerator(popUp, page, 0)}</div> 
+        <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
+      </div>
     </div>
   </div>`;
 }
