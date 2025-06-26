@@ -1021,7 +1021,21 @@ function HLayOutGenerator(title, text, page, popUp) {
         <p class="text">${text[page][0]}</p>
       </div>
       <div id="Hmodals-container1">
-        ${modalGenerator(popUp, page, 0)}
+        <div id="Hmodals-container-ind0" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 0)}
+        </div>
+        <div id="Hmodals-container-ind1" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 1)}
+        </div>
+        <div id="Hmodals-container-ind2" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 2)}
+        </div>
+        <div id="Hmodals-container-ind3" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 3)}
+        </div>
+        <div id="Hmodals-container-ind4" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 4)}
+        </div>
       </div>
     </div>
     <div id="Hrow2">
@@ -1030,7 +1044,21 @@ function HLayOutGenerator(title, text, page, popUp) {
         <p class="text">${text[page][1]}</p>
       </div>
       <div id="Hmodals-container2">
-        ${modalGenerator(popUp, page, 1)}
+        <div id="Hmodals-container-ind5" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 5)}
+        </div>
+        <div id="Hmodals-container-ind6" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 6)}
+        </div>
+        <div id="Hmodals-container-ind7" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 7)}
+        </div>
+        <div id="Hmodals-container-ind8" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 8)}
+        </div>
+        <div id="Hmodals-container-ind9" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 9)}
+        </div>
       </div>
     </div>
   </div>`;
