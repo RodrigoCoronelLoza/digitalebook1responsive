@@ -1135,7 +1135,21 @@ function LLayOutGenerator(title, text, page, popUp) {
       <p class="text" id="Ltext">${text[page]}</p>
     </div>
     <div id="Lmodals-container">
-      ${modalGenerator(popUp, page, 0)}
+      <div id="Lmodals-container-ind0" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 0)}
+      </div>
+      <div id="Lmodals-container-ind1" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 1)}
+      </div>
+      <div id="Lmodals-container-ind2" class="col-xs-12 col-sm-4">
+          ${modalGeneratorSpecific(popUp, page, 2)}
+      </div>
+      <div id="Lmodals-container-ind3" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 3)}
+      </div>
+      <div id="Lmodals-container-ind4" class="col-xs-12 col-sm-6">
+          ${modalGeneratorSpecific(popUp, page, 4)}
+      </div>
     </div>
   </div>`;
 }
