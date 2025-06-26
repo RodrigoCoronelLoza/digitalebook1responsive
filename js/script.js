@@ -1185,14 +1185,22 @@ function NLayOutGenerator(title, text, page, popUp) {
   <div id="Nlayout-container">
     <h1 class="titles" id="Ntitle">${title[page]}</h1>
     <div id="Ntext-container">
-      <div id="Ntext-containerLeft">
-        <p class="text" id="Ltext1">${text[page][0]}</p>
+      <div id="Nrow1" class="col-xs-12 col-sm-12 col-md-6">
+        <div id="Ntext-containerLeft">
+          <p class="text" id="Ltext1">${text[page][0]}</p>
+        </div>
+        <div id="Nmodals-containerLeft">
+          ${modalGeneratorSpecific(popUp, page, 0)}
+        </div>
       </div>
-      <div id="Ntext-containerRight">
-         <p class="text" id="Ltext2">${text[page][1]}</p>
+      <div id="Nrow2" class="col-xs-12 col-sm-12 col-md-6">
+        <div id="Ntext-containerRight">
+          <p class="text" id="Ltext2">${text[page][1]}</p>  
+        </div>
+        <div id="Nmodals-containerRight">
+          ${modalGeneratorSpecific(popUp, page, 1)}
+        </div>
       </div>
-    </div>
-    <div id="Nmodals-container">${modalGenerator(popUp, page, 0)}
     </div>
   </div>`;
 }
@@ -1263,6 +1271,35 @@ function modalGenerator(popUp, page, selector) {
         </div>
       </div>`;
   }
+  return result;
+}
+
+function modalGeneratorSpecific(popUp, page, index) {
+  let result = "";
+  result = `<div id="modal-container${index}">
+        <button data-modal-target="#modal${index}" 
+          class="open-button${index}">${modalExtractor(
+    popUp,
+    page,
+    "buttonName",
+    index
+  )}
+        </button>
+        <div class="mymodal" id="modal${index}">
+          <div class="mymodal-header">
+            <div class="title">${modalExtractor(
+              popUp,
+              page,
+              "title",
+              index
+            )}</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="mymodal-body">
+            ${modalExtractor(popUp, page, "contentModal", index)}
+          </div>
+        </div>
+      </div>`;
   return result;
 }
 

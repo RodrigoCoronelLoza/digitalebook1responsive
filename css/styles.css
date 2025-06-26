@@ -1379,26 +1379,33 @@ hr {
 }
 
 .Nlayout #Nlayout-container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
 }
 
 .Nlayout #Nlayout-container #Ntitle {
   margin: 0;
   height: 10%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .Nlayout #Nlayout-container #Ntext-container {
-  height: 60%;
+  height: 90%;
   display: flex;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 
-.Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
-#Ntext-containerRight {
-  height: 100%;
+.Nlayout #Nlayout-container #Ntext-container #Nrow1,
+#Nrow2 {
+  /* border: 1px solid blue; */
   width: 50%;
+  height: 100%;
+}
+
+/* .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+#Ntext-containerRight {
+  border: 1px solid red;
+  height: 70%;
   position: relative;
 }
 
@@ -1413,15 +1420,15 @@ hr {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.Nlayout #Nlayout-container #Nmodals-container {
-  /* border: 4px solid purple; */
+.Nlayout #Nlayout-container #Nmodals-containerLeft,
+#Nmodals-containerRight {
   height: 30%;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.Nlayout #Nlayout-container #Nmodals-container #modal-container0 {
+.Nlayout #Nlayout-container #Nmodals-containerLeft #modal-container0 {
   border: 1px solid green;
   width: 30%;
   margin-left: 10%;
@@ -1429,19 +1436,19 @@ hr {
   height: 100%;
 }
 
-.Nlayout #Nlayout-container #Nmodals-container #modal-container1 {
+.Nlayout #Nlayout-container #Nmodals-containerRight #modal-container1 {
   width: 30%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 90%;
+  height: 100%;
 }
 
-.Nlayout #Nlayout-container #Nmodals-container .open-button0 {
+.Nlayout #Nlayout-container #Nmodals-containerLeft .open-button0 {
   background-image: linear-gradient(to right, var(--secondary), var(--primary));
   color: white;
   border-radius: 50%;
   height: 100%;
-  width: 70%;
+  width: 100%;
   font-size: 1.8vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
@@ -1455,12 +1462,12 @@ hr {
   );
 }
 
-.Nlayout #Nlayout-container #Nmodals-container .open-button1 {
+.Nlayout #Nlayout-container #Nmodals-containerRight .open-button1 {
   background-image: linear-gradient(to right, var(--secondary), var(--primary));
   color: white;
   border-radius: 50%;
   height: 100%;
-  width: 70%;
+  width: 100%;
   font-size: 1.8vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
@@ -1471,7 +1478,7 @@ hr {
     var(--hoverbuttons0),
     var(--hoverbuttons1)
   );
-}
+} */
 
 .Olayout {
   padding-left: 1%;
@@ -2084,6 +2091,92 @@ hr {
     background-color: var(--primary);
     color: white;
   }
+
+  .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+  #Ntext-containerRight {
+    border: 1px solid red;
+    height: 70%;
+    position: relative;
+  }
+
+  .Nlayout #Nlayout-container #Ntext-container #Ltext1,
+  #Ltext2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft,
+  #Nmodals-containerRight {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft #modal-container0 {
+    border: 1px solid green;
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight #modal-container1 {
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vw;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-container .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vw;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+  .Nlayout #Nlayout-container #Nmodals-container .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2544,6 +2637,125 @@ hr {
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
     background-color: var(--primary);
     color: white;
+  }
+
+  .Nlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Nlayout #Nlayout-container {
+    /* border: 1px solid black; */
+    height: auto;
+  }
+  .Nlayout #Nlayout-container #Ntitle {
+    margin: 0;
+    height: auto;
+    /* border: 1px solid red; */
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .Nlayout #Nlayout-container #Ntext-container {
+    height: auto;
+    display: block;
+    width: 100%;
+    /* border: 2px solid orange; */
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Nrow1,
+  #Nrow2 {
+    border: 1px solid blue;
+    /* width: 100%; */
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+  #Ntext-containerRight {
+    border: 1px solid red;
+    height: 20em;
+    
+    /* position: relative; */
+  }
+
+  .Nlayout #Nlayout-container #Ntext-container #Ltext1,
+  #Ltext2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft,
+  #Nmodals-containerRight {
+    margin-top: 1em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft #modal-container0 {
+    border: 1px solid green;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight #modal-container1 {
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vw;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-container .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vw;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+  .Nlayout #Nlayout-container #Nmodals-container .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
   }
 }
 
@@ -3099,6 +3311,122 @@ hr {
     background-color: var(--primary);
     color: white;
   }
+
+  .Nlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Nlayout #Nlayout-container {
+    /* border: 1px solid black; */
+    height: auto;
+  }
+  .Nlayout #Nlayout-container #Ntitle {
+    margin: 0;
+    height: auto;
+    /* border: 1px solid red; */
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .Nlayout #Nlayout-container #Ntext-container {
+    height: auto;
+    display: block;
+    /* border: 2px solid orange; */
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Nrow1,
+  #Nrow2 {
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    display: flex;
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+  #Ntext-containerRight {
+    border: 1px solid red;
+    height: auto;
+    width: 70%;
+    /* position: relative; */
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Ltext1,
+  #Ltext2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft,
+  #Nmodals-containerRight {
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft #modal-container0 {
+    border: 1px solid green;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight #modal-container1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8em;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-container .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8em;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+  .Nlayout #Nlayout-container #Nmodals-container .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
 }
 
 /********** Extra small devices only **********/
@@ -3649,6 +3977,119 @@ hr {
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
     background-color: var(--primary);
     color: white;
+  }
+  .Nlayout {
+    height: auto;
+    font-size: 1em;
+    width: 100%;
+  }
+  .Nlayout #Nlayout-container {
+    /* border: 1px solid black; */
+    height: auto;
+  }
+  .Nlayout #Nlayout-container #Ntitle {
+    margin: 0;
+    height: auto;
+    /* border: 1px solid red; */
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .Nlayout #Nlayout-container #Ntext-container {
+    height: auto;
+    display: block;
+    /* border: 2px solid orange; */
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Nrow1,
+  #Nrow2 {
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+  #Ntext-containerRight {
+    border: 1px solid red;
+    height: auto;
+    /* position: relative; */
+  }
+  .Nlayout #Nlayout-container #Ntext-container #Ltext1,
+  #Ltext2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft,
+  #Nmodals-containerRight {
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerLeft #modal-container0 {
+    border: 1px solid green;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight #modal-container1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+  }
+  .Nlayout #Nlayout-container #Nmodals-containerLeft .open-button0 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8em;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-container .open-button0:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
+  }
+
+  .Nlayout #Nlayout-container #Nmodals-containerRight .open-button1 {
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    color: white;
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8em;
+    box-shadow: 10px 10px 5px var(--backgroud);
+    border: none;
+  }
+  .Nlayout #Nlayout-container #Nmodals-container .open-button1:hover {
+    background-image: linear-gradient(
+      to right,
+      var(--hoverbuttons0),
+      var(--hoverbuttons1)
+    );
   }
 }
 
