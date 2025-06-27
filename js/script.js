@@ -6,6 +6,23 @@ if (candidate > -1 && candidate < Object.keys(textData).length - 1) {
 let currentSlideNumberCarousel = 0;
 let currentParagNumber = 1;
 let statusMenu1 = 0;
+let previousWidth = window.innerWidth;
+
+window.addEventListener("resize", function () {
+  const currentWidth = window.innerWidth;
+
+  if (currentWidth !== previousWidth) {
+    // console.log("Device width changed!");
+    // console.log("Previous width:", previousWidth);
+    // console.log("Current width:", currentWidth);
+    masterRender();
+
+    // Perform actions based on the width change
+    // For example, update UI elements, adjust layouts, etc.
+
+    previousWidth = currentWidth; // Update the stored width for the next check
+  }
+});
 
 // Esta funcion hace la renderizacion de cada una de las paginas
 function renderPage() {
