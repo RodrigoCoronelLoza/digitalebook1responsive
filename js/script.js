@@ -15,6 +15,8 @@ function renderPage() {
   const advButton = document.getElementById("adv-buttons");
   const overlay = document.getElementById("overlay");
   const indexPermanent = document.getElementById("index-permanent");
+  const deviceWidth = window.innerWidth;
+  let imagesToTake = {};
 
   pageContent.addEventListener("click", handleDomCLick);
   overlay.addEventListener("click", handleOverlayClick);
@@ -35,6 +37,15 @@ function renderPage() {
     indexPermanent.style.display = "block";
   }
 
+  if (deviceWidth <= 767) {
+    imagesToTake = images_xs_Data;
+  } else if (deviceWidth >= 768 && deviceWidth <= 991) {
+    imagesToTake = images_sm_Data;
+  } else if (deviceWidth >= 992 && deviceWidth <= 1199) {
+    imagesToTake = images_md_Data;
+  } else {
+    imagesToTake = imagesData;
+  }
   pageContent.className = layoutData[currentPage];
   pageContent.innerHTML = createStructure(
     titlesData,
@@ -42,7 +53,7 @@ function renderPage() {
     layoutData,
     currentPage,
     popUpData,
-    imagesData,
+    imagesToTake,
     buttonsNameData,
     buttonsPageNumberData,
     linksData
