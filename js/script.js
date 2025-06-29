@@ -34,6 +34,7 @@ function renderPage() {
   const indexPermanent = document.getElementById("index-permanent");
   const deviceWidth = window.innerWidth;
   let imagesToTake = {};
+  let popUpToTake = {};
 
   pageContent.addEventListener("click", handleDomCLick);
   overlay.addEventListener("click", handleOverlayClick);
@@ -56,12 +57,16 @@ function renderPage() {
 
   if (deviceWidth <= 767) {
     imagesToTake = images_xs_Data;
+    popUpToTake = popUp_xs_Data;
   } else if (deviceWidth >= 768 && deviceWidth <= 991) {
     imagesToTake = images_sm_Data;
+    popUpToTake = popUp_sm_Data;
   } else if (deviceWidth >= 992 && deviceWidth <= 1199) {
     imagesToTake = images_md_Data;
+    popUpToTake = popUp_md_Data;
   } else {
     imagesToTake = imagesData;
+    popUpToTake = popUpData;
   }
   pageContent.className = layoutData[currentPage];
   pageContent.innerHTML = createStructure(
@@ -69,7 +74,7 @@ function renderPage() {
     textData,
     layoutData,
     currentPage,
-    popUpData,
+    popUpToTake,
     imagesToTake,
     buttonsNameData,
     buttonsPageNumberData,
@@ -1135,10 +1140,10 @@ function JLayOutGenerator(title, text, images, page) {
           <img id="Jimage" src="images/${images[page][currentSlideNumberCarousel]}">
         </div>
         <div id="JnextSlide-container">
-          <button class="SlideCarouselButton" onclick ="nextSlide(${numberOfSlidesCarousel})" >❯</button>
+          <button class="SlideCarouselButton" onclick ="nextSlide(${numberOfSlidesCarousel})"><i class="glyphicon glyphicon-triangle-right"></i></button>
         </div>
         <div id="JprevSlide-container">  
-            <button class="SlideCarouselButton" onclick ="prevSlide()">❮</button>
+            <button class="SlideCarouselButton" onclick ="prevSlide()"><i class="glyphicon glyphicon-triangle-left"></i></button>
         </div>
     </div>
   </div>`;

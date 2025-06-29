@@ -1827,6 +1827,81 @@ hr {
   background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   color: white;
 }
+/* Pop-ups */
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 80%;
+  max-width: 80%;
+}
+
+.mymodal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.mymodal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary);
+  background-color: var(--primary);
+  color: white;
+}
+
+.mymodal-header .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.mymodal-header .close-button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.mymodal-body {
+  /* padding: 10px 15px; */
+  text-align: left;
+  height: 90%;
+  width: 100%;
+}
+
+.mymodal-body #image-modal-body {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   #book-title-container {
@@ -2208,6 +2283,8 @@ hr {
     font-size: 2.5em;
     border: none;
     color: white;
+    margin: 0;
+    padding: 0;
   }
 
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
@@ -2936,6 +3013,8 @@ hr {
     font-size: 2.5em;
     border: none;
     color: black;
+    margin: 0;
+    padding: 0;
   }
 
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
@@ -3898,6 +3977,8 @@ hr {
     font-size: 2.5em;
     border: none;
     color: black;
+    margin: 0;
+    padding: 0;
   }
 
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
@@ -4396,9 +4477,9 @@ hr {
     #index-button-container
     #index-buttons
     .button-index-container {
-    height: 5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    height: 8em;
+    margin-top: 2em;
+    margin-bottom: 4em;
   }
   .Elayout
     #Elayout-container
@@ -4409,7 +4490,7 @@ hr {
     /* margin-bottom: 1em; */
     width: 100%;
     height: 100%;
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   .Flayout {
     height: auto;
@@ -4802,6 +4883,7 @@ hr {
     /* height: 100%; */
     height: auto;
     width: 100%;
+    margin-top: 7em;
     /* margin: 0;
     position: absolute;
     top: 50%;
@@ -4818,7 +4900,7 @@ hr {
     /* border: 1px solid green; */
     position: absolute;
     margin: 0;
-    top: 0;
+    top: -5em;
     right: 0;
     /* -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
@@ -4829,7 +4911,7 @@ hr {
   .Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
     position: absolute;
     margin: 0;
-    top: 0;
+    top: -5em;
     left: 0;
     /* -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
@@ -4837,22 +4919,24 @@ hr {
     height: 5em;
   }
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
       to right,
       var(--auxiliar),
       var(--secondary)
-    ); */
+    );
     width: 100%;
     height: 100%;
     border-radius: 50%;
     font-size: 2.5em;
     border: none;
-    color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
   }
 
   .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
     background-color: var(--primary);
-    color: white;
+    color: black;
   }
 
   .Llayout {
@@ -5082,11 +5166,17 @@ hr {
     width: 150%;
     height: 100%;
     font-size: 1em;
+    margin-left: 0;
+    padding-left: 0.3em;
   }
   .Playout #Playout-container #Pbutton .open-button1 {
     width: 150%;
     border-radius: 1em;
     font-size: 1em;
+    padding-left: 0.3em;
+  }
+  .mymodal {
+    height: 90%;
   }
 }
 
@@ -5095,77 +5185,4 @@ hr {
   #menu-header {
     display: inline;
   }
-}
-
-/* Pop-ups */
-
-.mymodal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid var(--primary);
-  border-radius: 10px;
-  z-index: 10;
-  background-color: white;
-  width: 80%;
-  max-width: 80%;
-}
-
-.mymodal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.mymodal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--secondary);
-  background-color: var(--primary);
-  color: white;
-}
-
-.mymodal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.mymodal-header .close-button {
-  color: white;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.mymodal-body {
-  padding: 10px 15px;
-  text-align: left;
-  height: 90%;
-}
-
-.mymodal-body #image-modal-body {
-  height: 35vw;
-  width: 100%;
-}
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
 }
