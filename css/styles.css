@@ -3258,6 +3258,9 @@ hr {
     border-radius: 1em;
     font-size: 1em;
   }
+  .mymodal {
+    height: 90%;
+  }
 }
 
 /********** Small devices only **********/
@@ -4221,6 +4224,9 @@ hr {
     width: 150%;
     border-radius: 1em;
     font-size: 1em;
+  }
+  .mymodal {
+    height: 90%;
   }
 }
 
