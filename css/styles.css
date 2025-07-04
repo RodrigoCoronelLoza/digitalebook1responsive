@@ -270,6 +270,7 @@ body {
   width: 95%;
   background-image: url("../images/CHA_10.jpeg");
   background-size: 100% 100%;
+  min-height: 90vh;
 }
 
 .Clayout #Clayout-container {
@@ -4236,6 +4237,7 @@ hr {
     height: auto;
   }
   #book-container {
+    /* border: 2px solid green; */
     height: auto;
   }
   #menu-image-container {
@@ -4266,12 +4268,15 @@ hr {
   .index-buttons {
     font-size: 0.55em;
     padding: 0;
+    padding-left: 0.5em;
     /* padding: ; */
     /* border: solid forestgreen */
   }
   #adv-buttons {
     text-align: center;
     /* height: auto; */
+    /* border: 1px solid green; */
+    padding-bottom: 2em;
   }
   .nav-buttons {
     padding: 0;
@@ -4279,7 +4284,7 @@ hr {
     font-size: 1em;
     border-radius: 10px;
     width: 10em;
-    height: 1.5em;
+    height: 2em;
     /* height:fit-content; */
     /* color: #7000e0; */
 
@@ -4316,12 +4321,16 @@ hr {
   }
 
   .Blayout {
+    /* border: 2px solid red; */
     height: auto;
+    min-height: 90vh;
     width: 100%;
     font-size: 1em;
   }
   .Blayout #Blayout-container {
     height: auto;
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .Blayout #Btitle {
     padding-top: 1em;
@@ -4331,6 +4340,7 @@ hr {
   .Blayout #Blayout-container #Btext-container {
     margin-top: 3em;
     margin-bottom: 3em;
+
     height: auto;
   }
   .Clayout {
@@ -4360,6 +4370,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Dlayout h1 {
     margin-top: 1em;
@@ -4451,12 +4462,14 @@ hr {
   .Dlayout #Dimage-container #Dimage {
     height: 100%;
     width: 100%;
+    margin-bottom: 2em;
   }
 
   .Elayout {
     height: auto;
     width: 100%;
     padding-top: 1em;
+    min-height: 90vh;
   }
   .Elayout #Elayout-container {
     margin-top: 5em;
@@ -4483,9 +4496,9 @@ hr {
     #index-button-container
     #index-buttons
     .button-index-container {
-    height: 8em;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    height: 15em;
+    margin-top: 3em;
+    margin-bottom: 5em;
   }
   .Elayout
     #Elayout-container
@@ -4502,6 +4515,7 @@ hr {
     height: auto;
     width: 100%;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Flayout #Flayout-container {
     height: auto;
@@ -4576,19 +4590,24 @@ hr {
   .Hlayout {
     height: auto;
     font-size: 1em;
-    width: 100%;
+    width: 95%;
+    margin-bottom: 2em;
+    min-height: 90vh;
   }
 
   .Hlayout #Hlayout-container {
+    /* border: 1px solid green; */
     height: auto;
-    width: 100%;
+    /* width: 100%; */
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .Hlayout #Hlayout-container #Hrow1 {
     height: auto;
     /* position: relative; */
     margin-bottom: 1em;
-    width: 100%;
+    /* width: 100%; */
     /* border: 1px solid green; */
   }
   .Hlayout #Hlayout-container #Hrow1 #Htitle1 {
@@ -4610,7 +4629,7 @@ hr {
     height: auto;
     /* position: absolute;
     bottom: 4%; */
-    width: 100%;
+    /* width: 100%; */
   }
   .Hlayout #Hlayout-container #Hrow2 {
     height: auto;
@@ -4717,13 +4736,16 @@ hr {
   .Glayout {
     height: auto;
     font-size: 1em;
-    width: 100%;
+    width: 95%;
+    margin-left: 1em;
+    min-height: 90vh;
   }
 
   .Glayout #Glayout-container {
     height: auto;
   }
   .Glayout #Glayout-container #Grow1 {
+    margin-top: 2em;
     width: 100%;
     height: auto;
   }
@@ -4736,8 +4758,8 @@ hr {
   .Glayout #Glayout-container #Grow2 {
     width: 100%;
     height: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 5em;
+    margin-bottom: 3em;
   }
   .Glayout #Glayout-container #Grow2 #Gtitle2 {
     margin: 0;
@@ -4756,6 +4778,7 @@ hr {
   }
 
   .Glayout #Grow3 #Gnext-modal {
+    margin-top: 3em;
     width: 100%;
     margin-bottom: 1em;
   }
@@ -4788,6 +4811,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Ilayout #Ilayout-container {
     height: auto;
@@ -4869,6 +4893,7 @@ hr {
     font-size: 1em;
     width: 100%;
     margin-bottom: 2em;
+    min-height: 90vh;
   }
   .Jlayout #Jlayout-container #Jtitle {
     height: auto;
@@ -4949,6 +4974,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
 
   .Llayout #Llayout-container {
@@ -4988,10 +5014,10 @@ hr {
     /* width: 20%; */
     /* border: 1px solid red; */
     display: flex;
-    height: 3em;
+    height: 5em;
     justify-content: center;
     /* margin-top: 1em; */
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
   }
 
   .Llayout #Llayout-container #Lmodals-container #modal-container0,
@@ -5027,6 +5053,7 @@ hr {
   .Nlayout {
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
     width: 100%;
   }
   .Nlayout #Nlayout-container {
@@ -5051,6 +5078,7 @@ hr {
     width: 100%;
     height: auto;
     margin-top: 1em;
+    margin-bottom: 1em;
   }
   .Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
   #Ntext-containerRight {
@@ -5071,7 +5099,7 @@ hr {
   }
   .Nlayout #Nlayout-container #Nmodals-containerLeft,
   #Nmodals-containerRight {
-    height: 5em;
+    height: 8em;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -5138,18 +5166,22 @@ hr {
     );
   }
   .Olayout {
-    height: 100vh;
+    /* height: 100vh; */
     font-size: 1.1em;
     width: 100%;
     margin-bottom: 1em;
     margin-top: 1em;
+    min-height: 90vh;
   }
 
   .Olayout #Olayout-container {
-    height: 100vh;
+    /* height: 100vh; */
+    /* border: 1px solid forestgreen; */
+    height: auto;
   }
   .Olayout #Otitle {
-    margin: 0;
+    /* margin: 0; */
+    margin-left: 1em;
     height: auto;
     font-size: 1.8em;
   }
@@ -5158,34 +5190,53 @@ hr {
     width: 100%;
   }
   .Playout {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
+    margin-bottom: 6em;
+    min-height: 90vh;
   }
   .Playout h1 {
     margin: 0;
     height: auto;
     font-size: 1.8em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 3em;
   }
-  .Playout #Pbutton .open-button0 {
-    width: 150%;
+  .Playout #Playout-container #Pbutton {
+    /* border: 1px solid green; */
+    width: 12%;
+    height: 40em;
+    z-index: 100;
+  }
+  .Playout #Playout-container #Pbutton .open-button0 {
+    width: 100%;
     height: 100%;
     font-size: 1em;
     margin-left: 0;
     padding-left: 0.3em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    /* z-index: 100; */
   }
   .Playout #Playout-container #Pbutton .open-button1 {
-    width: 150%;
+    width: 100%;
     border-radius: 1em;
-    font-size: 1em;
+    height: 30em;
+    font-size: 1.5em;
+    margin-left: 0;
     padding-left: 0.3em;
   }
+
   .mymodal {
     height: 90%;
   }
 }
 
+/* @media (min-width: 700px) and (max-width: 766px) {
+  .Olayout #Olayout-container {
+    height: auto;
+  }
+} */
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   #menu-header {
