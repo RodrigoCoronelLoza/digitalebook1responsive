@@ -823,7 +823,7 @@ function createStructure(
   let currentLayout = layout[page];
   let content = "";
   if (currentLayout === "Alayout") {
-    content = ALayoutGenerator(titles, text, page);
+    content = ALayoutGenerator(titles, text, page, images);
   } else if (currentLayout === "Blayout") {
     content = BLayOutGenerator(titles, text, page);
   } else if (currentLayout === "Clayout") {
@@ -858,10 +858,10 @@ function createStructure(
   return content;
 }
 // Plantilla A
-function ALayoutGenerator(titles, text, page) {
+function ALayoutGenerator(titles, text, page, images) {
   return `
   <div class="Alayout-container">
-    <img id="caratula" src="images/caratula.png">
+    <img id="caratula" src="images/${images[page]}">
       <div class="button-caratula-container">
         <button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button>
       </div>

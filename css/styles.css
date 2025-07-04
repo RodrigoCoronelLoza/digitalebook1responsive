@@ -106,7 +106,7 @@ body {
   margin-right: 2%;
 }
 
-.Alayout-container {
+/* .Alayout-container {
   height: 100%;
   position: relative;
 }
@@ -121,10 +121,9 @@ body {
   left: 4%;
   width: 20vw;
   height: 10%;
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* Botones de navegacion */
 .nav-buttons {
@@ -147,14 +146,14 @@ body {
   );
 }
 
-#comenzar-button {
+/* #comenzar-button {
   width: 100%;
   height: 100%;
   font-size: 1.5vw;
   padding: 0;
   border: 0;
   margin-left: 0;
-}
+} */
 
 .jump-buttons {
   color: white;
@@ -1925,6 +1924,32 @@ hr {
     bottom: 1em;
     font-size: 1.2vw;
   }
+  .Alayout-container {
+    height: 100%;
+    position: relative;
+  }
+  .Alayout-container #caratula {
+    height: 100%;
+    width: 100%;
+  }
+  #comenzar-button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vw;
+    padding: 0;
+    border: 0;
+    margin-left: 0;
+  }
+
+  .button-caratula-container {
+    position: absolute;
+    bottom: 15%;
+    left: 4%;
+    width: 20vw;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .Blayout #Blayout-container #Btext {
     margin: 0;
     position: absolute;
@@ -2456,29 +2481,37 @@ hr {
   #page-container {
     height: auto;
   }
+
   .Alayout {
-    height: 100vh;
+    height: 85vh;
+    margin-top: 0;
   }
   .Alayout-container {
-    height: 100vh;
+    /* border: 1px solid red; */
+    margin-top: 0;
+    height: 100%;
     position: relative;
   }
   .Alayout-container #caratula {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   .button-caratula-container {
     position: absolute;
-    bottom: 10em;
-    left: 3em;
+    bottom: 2em;
+    left: 2em;
     width: 15em;
-    height: 8em;
+    height: 4em;
   }
   #comenzar-button {
+    width: 100%;
+    height: 100%;
     font-size: 1.5em;
   }
   .Blayout {
     height: auto;
+    min-height: 90vh;
   }
   .Blayout #Blayout-container {
     height: auto;
@@ -2494,6 +2527,7 @@ hr {
   .Clayout {
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Clayout #Clayout-container {
     height: auto;
@@ -2518,6 +2552,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Dlayout h1 {
     margin: 0;
@@ -2539,6 +2574,7 @@ hr {
     width: 100%;
     padding-top: 5em;
     padding-bottom: 5em;
+    min-height: 90vh;
   }
 
   .Elayout #Elayout-container {
@@ -2595,6 +2631,7 @@ hr {
     height: auto;
     width: 100%;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Flayout #Flayout-container {
     height: auto;
@@ -2661,6 +2698,7 @@ hr {
     height: auto;
     font-size: 1.2em;
     width: 100%;
+    min-height: 90vh;
   }
   .Glayout #Glayout-container {
     height: auto;
@@ -2729,6 +2767,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
 
   .Hlayout #Hlayout-container {
@@ -2869,6 +2908,7 @@ hr {
   .Ilayout {
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
     /* width: 100%; */
   }
   .Ilayout #Ilayout-container {
@@ -2965,6 +3005,7 @@ hr {
     font-size: 1em;
     width: 100%;
     margin-bottom: 2em;
+    min-height: 90vh;
   }
   .Jlayout #Jlayout-container #Jtitle {
     height: auto;
@@ -3040,6 +3081,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
 
   .Llayout #Llayout-container {
@@ -3188,6 +3230,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Nlayout #Nlayout-container {
     /* border: 1px solid black; */
@@ -3307,6 +3350,7 @@ hr {
     width: 100%;
     margin-bottom: 1em;
     margin-top: 1em;
+    min-height: 90vh;
   }
 
   .Olayout #Olayout-container {
@@ -3325,6 +3369,7 @@ hr {
   .Playout {
     height: 100vh;
     width: 100%;
+    min-height: 90vh;
   }
   .Playout h1 {
     margin: 0;
@@ -3342,9 +3387,6 @@ hr {
     width: 150%;
     border-radius: 1em;
     font-size: 1em;
-  }
-  .mymodal {
-    height: 90%;
   }
 }
 
@@ -3369,12 +3411,7 @@ hr {
   #index-permanent {
     width: 25%;
   }
-  .index-buttons {
-    font-size: 0.55em;
-    padding: 0;
-    /* padding: ; */
-    /* border: solid forestgreen */
-  }
+
   #adv-buttons {
     text-align: center;
     /* height: auto; */
@@ -3399,27 +3436,34 @@ hr {
     width: 2em;
   }
   .index-buttons {
-    font-size: 1.3em;
+    padding: 0;
+    font-size: 1em;
   }
   .Alayout {
-    height: 100vh;
+    height: 85vh;
+    margin-top: 0;
   }
   .Alayout-container {
-    height: 100vh;
+    /* border: 1px solid red; */
+    margin-top: 0;
+    height: 100%;
     position: relative;
   }
   .Alayout-container #caratula {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   .button-caratula-container {
     position: absolute;
-    bottom: 10em;
-    left: 3em;
+    bottom: 2em;
+    left: 2em;
     width: 15em;
-    height: 8em;
+    height: 4em;
   }
   #comenzar-button {
+    width: 100%;
+    height: 100%;
     font-size: 1.5em;
   }
 
@@ -3427,6 +3471,7 @@ hr {
     /* border: 3px solid red; */
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Blayout #Blayout-container {
     height: auto;
@@ -3469,6 +3514,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Dlayout h1 {
     margin-top: 1em;
@@ -3566,6 +3612,7 @@ hr {
     width: 100%;
     padding-top: 5em;
     padding-bottom: 5em;
+    min-height: 90vh;
   }
   .Elayout #Elayout-container {
     /* margin-top: 5em; */
@@ -3625,6 +3672,7 @@ hr {
     height: auto;
     width: 100%;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Flayout #Flayout-container {
     height: auto;
@@ -3691,6 +3739,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
 
   .Glayout #Glayout-container {
@@ -3769,6 +3818,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Hlayout #Hlayout-container {
     height: auto;
@@ -3918,6 +3968,7 @@ hr {
   .Ilayout {
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
     /* width: 100%; */
   }
   .Ilayout #Ilayout-container {
@@ -4000,6 +4051,7 @@ hr {
     font-size: 1em;
     width: 100%;
     margin-bottom: 2em;
+    min-height: 90vh;
   }
   .Jlayout #Jlayout-container #Jtitle {
     height: auto;
@@ -4079,6 +4131,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Llayout #Llayout-container {
     height: auto;
@@ -4229,6 +4282,7 @@ hr {
     height: auto;
     font-size: 1em;
     width: 100%;
+    min-height: 90vh;
   }
   .Nlayout #Nlayout-container {
     /* border: 1px solid black; */
@@ -4346,6 +4400,7 @@ hr {
     width: 100%;
     margin-bottom: 1em;
     margin-top: 1em;
+    min-height: 90vh;
   }
 
   .Olayout #Olayout-container {
@@ -4364,6 +4419,7 @@ hr {
   .Playout {
     height: 100vh;
     width: 100%;
+    min-height: 90vh;
   }
   .Playout h1 {
     margin: 0;
@@ -4382,8 +4438,9 @@ hr {
     border-radius: 1em;
     font-size: 1em;
   }
-  .mymodal {
-    height: 90%;
+
+  .mymodal.active {
+    transform: translate(-50%, -90%) scale(1);
   }
 }
 
@@ -4434,6 +4491,7 @@ hr {
     /* border: 1px solid green; */
     padding-bottom: 2em;
   }
+
   .nav-buttons {
     padding: 0;
     margin: 0;
@@ -4455,24 +4513,30 @@ hr {
   }
 
   .Alayout {
-    height: 100vh;
+    height: 95vh;
+    margin-top: 0;
   }
   .Alayout-container {
-    height: 100vh;
+    /* border: 1px solid red; */
+    margin-top: 0;
+    height: 100%;
     position: relative;
   }
   .Alayout-container #caratula {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   .button-caratula-container {
     position: absolute;
-    bottom: 10em;
-    left: 3em;
-    width: 15em;
-    height: 8em;
+    bottom: 8em;
+    left: 2em;
+    width: 10em;
+    height: 4em;
   }
   #comenzar-button {
+    width: 100%;
+    height: 100%;
     font-size: 1.5em;
   }
 
@@ -4502,6 +4566,7 @@ hr {
   .Clayout {
     height: auto;
     font-size: 1em;
+    min-height: 90vh;
   }
   .Clayout #Clayout-container {
     height: auto;
