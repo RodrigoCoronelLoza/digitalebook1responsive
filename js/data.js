@@ -1540,7 +1540,7 @@ const popUp_sm_Data = {
     {
       title: " ",
       typeofContent: "image",
-      contentModal: "PAG40POP-1_SM.png",
+      contentModal: "PAG40POP-1_MD.png",
       buttonName: "N° 1",
     },
     {
