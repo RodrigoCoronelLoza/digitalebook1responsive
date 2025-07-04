@@ -4439,8 +4439,8 @@ hr {
     font-size: 1em;
   }
 
-  .mymodal.active {
-    transform: translate(-50%, -90%) scale(1);
+  .mymodal {
+    height: 90vh;
   }
 }
 
@@ -5518,7 +5518,7 @@ hr {
   }
 
   .mymodal {
-    height: 90%;
+    height: 90vh;
   }
 }
 
