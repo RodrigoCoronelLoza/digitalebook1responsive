@@ -445,7 +445,6 @@ hr {
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 #modal-container2,
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 #modal-container3,
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 #modal-container4 {
-  /* border: 1px solid green; */
   margin-left: 2%;
   margin-right: 2%;
   height: 100%;
@@ -791,7 +790,6 @@ hr {
 }
 
 .Llayout #Llayout-container #Lmodals-container {
-  /* border: 1px solid green; */
   text-align: center;
   padding-right: auto;
   display: flex;
