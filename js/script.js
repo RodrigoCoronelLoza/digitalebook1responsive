@@ -12,15 +12,8 @@ window.addEventListener("resize", function () {
   const currentWidth = window.innerWidth;
 
   if (currentWidth !== previousWidth) {
-    // console.log("Device width changed!");
-    // console.log("Previous width:", previousWidth);
-    // console.log("Current width:", currentWidth);
     masterRender();
-
-    // Perform actions based on the width change
-    // For example, update UI elements, adjust layouts, etc.
-
-    previousWidth = currentWidth; // Update the stored width for the next check
+    previousWidth = currentWidth;
   }
 });
 
@@ -709,7 +702,6 @@ const handleDomCLick = (event) => {
 const handleOverlayClick = (event) => {
   const clickedBtn = event.target;
   const modals = document.querySelectorAll(".mymodal.active");
-  // console.log(modals.length);
   if (modals.length > 0) {
     modals.forEach((modal) => {
       closeModal(modal);
@@ -722,7 +714,6 @@ const handleOverlayClick = (event) => {
     buttonAction.classList.add("collapsed");
     menu.classList.remove("in");
     buttonAction.setAttribute("aria-expanded", "false");
-    // return;
   }
 };
 
@@ -757,17 +748,12 @@ function setPage(value) {
 
 //ToggleButton
 function handleToggleAction() {
-  // console.log("estoy en el toogle");
   const buttonAction = document.getElementById("navbarToggle");
-  console.log(buttonAction.getAttribute("aria-expanded"));
   if (buttonAction.getAttribute("aria-expanded") === "true") {
     overlay.classList.remove("active");
-    console.log(overlay);
-    console.log("estamostrue");
   } else {
     overlay.classList.add("active");
   }
-  // indexContainer.style.height = 0;
 }
 
 function setVisible(value) {
