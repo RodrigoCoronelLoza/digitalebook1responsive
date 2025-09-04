@@ -128,7 +128,7 @@ const titlesData = {
   42: "Enfoque restaurativo",
   43: "Proceso justo",
   44: "Ventana de la disciplina social y Estilos de autoridad",
-  45: "Qué es el dialogo restaurativo",
+  45: "¿ Qué es el dialogo restaurativo ?",
   46: "Los afectos y la brújula de la vergüenza",
   47: "Línea de Tiempo de la Convivencia Escolar",
   48: "Glosario",
